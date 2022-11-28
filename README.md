@@ -1,7 +1,9 @@
 # Praktikum-5
 
 Nama : Dhea Dwi Adelia
+
 NIM  : 312210116
+
 Kelas: TI.22.A1
 
 ## Latihan
