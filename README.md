@@ -20,53 +20,53 @@ Buat Dictionary daftar kontak
 ### Langkah-langkah :
 1. Buat program terlebih dahulu.
 
-    daftarKontak = {"Nama":"Nomer Telpon"}
-    kontak       = {'Ari':'081267888', 'Dina' : '087677776'}
+            daftarKontak = {"Nama":"Nomer Telpon"}
+            kontak       = {'Ari':'081267888', 'Dina' : '087677776'}
 
-    #print
-    print(30*"═")
-    print("    Nama    |  Nomor Telepon  ") #print daftarkontak
-    print(30*"-")
-    print("   # Ari    | ", kontak['Ari']) #print kontak Ari
-    print("   # Dina   | ", kontak['Dina']) #print kontak Dina
-    print(30*"═")
+            #print
+            print(30*"═")
+            print("    Nama    |  Nomor Telepon  ") #print daftarkontak
+            print(30*"-")
+            print("   # Ari    | ", kontak['Ari']) #print kontak Ari
+            print("   # Dina   | ", kontak['Dina']) #print kontak Dina
+            print(30*"═")
 
-    #Tampilkan kontaknya Ari
-    print("Tampilkan kontaknya Ari")
-    print("    Ari     | ", kontak['Ari']) #print kontak Ari
-    print(30*"═")
-    #Tambah kontak baru dengan nama Riko, nomor 087654544
-    print("Tambah kontak baru dengan nama Riko, nomor 087654544")
-    kontak['Riko'] = '087654544'
-    print("    Riko    | ", kontak['Riko'])
-    print(30*"═")
+            #Tampilkan kontaknya Ari
+            print("Tampilkan kontaknya Ari")
+            print("    Ari     | ", kontak['Ari']) #print kontak Ari
+            print(30*"═")
+            #Tambah kontak baru dengan nama Riko, nomor 087654544
+            print("Tambah kontak baru dengan nama Riko, nomor 087654544")
+            kontak['Riko'] = '087654544'
+            print("    Riko    | ", kontak['Riko'])
+            print(30*"═")
 
-    #Ubah kontak Dina dengan nomor baru 088999776
-    print("Ubah kontak Dina dengan nomor baru 088999776")
-    kontak['Dina'] = '088999776'
-    print("    Dina    | ", kontak['Dina'])
-    print(30*"═")
+            #Ubah kontak Dina dengan nomor baru 088999776
+            print("Ubah kontak Dina dengan nomor baru 088999776")
+            kontak['Dina'] = '088999776'
+            print("    Dina    | ", kontak['Dina'])
+            print(30*"═")
 
-    #Tampilkan semua Nama
-    print("Tampilkan semua Nama")
-    print(kontak.keys())
-    print(30*"═")
+            #Tampilkan semua Nama
+            print("Tampilkan semua Nama")
+            print(kontak.keys())
+            print(30*"═")
 
-    #Tampilkan semua Nomor
-    print("Tampilkan semua Nomor")
-    print(kontak.values())
-    print(30*"═")
+            #Tampilkan semua Nomor
+            print("Tampilkan semua Nomor")
+            print(kontak.values())
+            print(30*"═")
 
-    #Tampilkan daftar Nama dan nomornya
-    print("Tampilkan daftar Nama dan nomornya")
-    print(kontak.items())
-    print(30*"═")
+            #Tampilkan daftar Nama dan nomornya
+            print("Tampilkan daftar Nama dan nomornya")
+            print(kontak.items())
+            print(30*"═")
 
-    #MengHapus kontak Dina
-    print("Hapus kontak Dina")
-    kontak.pop('Dina')
-    print(kontak.items())
-    print(30*"═")
+            #MengHapus kontak Dina
+            print("Hapus kontak Dina")
+            kontak.pop('Dina')
+            print(kontak.items())
+            print(30*"═")
     
  ![Screenshot (132)](https://user-images.githubusercontent.com/115794875/204241453-c121d671-a5c7-4173-924d-205a7d8b70fb.png)
  ![Screenshot (133)](https://user-images.githubusercontent.com/115794875/204241622-ca7b46c7-22ed-4fdf-9e09-c08626fde137.png)
@@ -90,65 +90,65 @@ Buat program sederhana yang akan menampilkan daftar nilai mahasiswa, dengan kete
 ### Langkah-langkah :
 1. Buat programnya terlebih dahulu.
 
-    print("====================================")
-    print("======>  Program Input Nilai  <======")
-    print("====================================")
-    data = {}
-    while True:
-        print("")
-        m = input("===>> (L)ihat, (T)ambah, (U)bah, (H)apus, (C)ari, (K)eluar : <=== ")
-        if m.lower() == 'k':
-            break
+            print("====================================")
+            print("======>  Program Input Nilai  <======")
+            print("====================================")
+            data = {}
+            while True:
+                print("")
+                m = input("===>> (L)ihat, (T)ambah, (U)bah, (H)apus, (C)ari, (K)eluar : <=== ")
+                if m.lower() == 'k':
+                    break
 
-        elif m.lower() == 'l':
-            print("----- DAFTAR NILAI -----")
-            print("=====================================================================================")
-            print("| NO |     NAMA     |      NIM       |   TUGAS   |   UTS    |   UAS    |   AKHIR    |")
-            print("=====================================================================================")
-            i = 0
-            for x in data.items():
-                i += 1
-                print("|  1 |{0:9}   |{1:9}     |{2:9} |{3:9}  |{4:9}   |{5:9}  |" .format(x[0], x[1][0],
-                                                                                           x[1][1], x[1][2], x[1][3],
-                                                                                           x[1][4], i))
+                elif m.lower() == 'l':
+                    print("----- DAFTAR NILAI -----")
+                    print("=====================================================================================")
+                    print("| NO |     NAMA     |      NIM       |   TUGAS   |   UTS    |   UAS    |   AKHIR    |")
+                    print("=====================================================================================")
+                    i = 0
+                    for x in data.items():
+                        i += 1
+                        print("|  1 |{0:9}   |{1:9}     |{2:9} |{3:9}  |{4:9}   |{5:9}  |" .format(x[0], x[1][0],
+                                                                                                   x[1][1], x[1][2], x[1][3],
+                                                                                                   x[1][4], i))
 
-            else:
-                print("====================================================================================")
+                    else:
+                        print("====================================================================================")
 
-        elif m.lower() == 't':
-            print("--------------- Tambah Data ---------------")
-            nama = input("Nama                  : ")
-            nim = input("Nim                   : ")
-            tugas = float(input("Masukan Nilai Tugas   : "))
-            uts = float(input("Masukan Nilai UTS     : "))
-            uas = float(input("Masukan Nilai UAS     : "))
-            akhir = (int(tugas) * .30) + (int(uts) * .35) + (int(uas) * .35)
-            data[nama] = nim, tugas, uts, uas, akhir
+                elif m.lower() == 't':
+                    print("--------------- Tambah Data ---------------")
+                    nama = input("Nama                  : ")
+                    nim = input("Nim                   : ")
+                    tugas = float(input("Masukan Nilai Tugas   : "))
+                    uts = float(input("Masukan Nilai UTS     : "))
+                    uas = float(input("Masukan Nilai UAS     : "))
+                    akhir = (int(tugas) * .30) + (int(uts) * .35) + (int(uas) * .35)
+                    data[nama] = nim, tugas, uts, uas, akhir
 
-        elif m.lower() == 'u':
-            print("----- Ubah Data Mahasiswa -----")
-            nama = input("Nama  : ")
-            if nama in data.keys():
-                nim = input("Nim : ")
-                tugas = float(input("masukan nilai tugas : "))
-                uts = float(input("masukan nilai Uts : "))
-                uas = float(input("masukan nilai uas : "))
-                akhir = (int(tugas) * .30) + (int(uts) * .35) + (int(uas) * .35)
-                data[nama] = nim, tugas, uts, uas, akhir
+                elif m.lower() == 'u':
+                    print("----- Ubah Data Mahasiswa -----")
+                    nama = input("Nama  : ")
+                    if nama in data.keys():
+                        nim = input("Nim : ")
+                        tugas = float(input("masukan nilai tugas : "))
+                        uts = float(input("masukan nilai Uts : "))
+                        uas = float(input("masukan nilai uas : "))
+                        akhir = (int(tugas) * .30) + (int(uts) * .35) + (int(uas) * .35)
+                        data[nama] = nim, tugas, uts, uas, akhir
 
-            else:
-                print("Tidak Ada data")
+                    else:
+                        print("Tidak Ada data")
 
-        elif m.lower() == 'h':
-            print("Hapus Data Mahasiswa")
-            nama = input("nama : ")
-            if nama in data.keys():
-                print("Datanya", nama, "adalah {0}".format(data[nama]))
-            else:
-                print("Tidaak Ada Data")
+                elif m.lower() == 'h':
+                    print("Hapus Data Mahasiswa")
+                    nama = input("nama : ")
+                    if nama in data.keys():
+                        print("Datanya", nama, "adalah {0}".format(data[nama]))
+                    else:
+                        print("Tidaak Ada Data")
 
-        else:
-            print("Pilih menu yang tersedia")
+                else:
+                    print("Pilih menu yang tersedia")   
             
   ![Screenshot (139)](https://user-images.githubusercontent.com/115794875/204242714-1c8f0a03-c3f6-4189-883b-3b8c8130af3a.png)
   ![Screenshot (140)](https://user-images.githubusercontent.com/115794875/204242806-47bfb77f-7ed7-47ac-960d-15e22b865e45.png)
